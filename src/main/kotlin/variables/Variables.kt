@@ -8,6 +8,7 @@ fun main() {
     println(i)
 
     val thisIsConstantValue: String = "Hello"    // We can omit the type here
+//    thisIsConstantValue = "World"     -> Cannot be reassigned
     println(thisIsConstantValue)
 
     var thisIsAVariable = "Hi"
