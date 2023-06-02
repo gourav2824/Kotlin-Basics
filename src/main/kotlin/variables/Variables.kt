@@ -18,4 +18,9 @@ fun main() {
 
     println(aTopLevelConstantValue)
     println(aTopLevelVariable)
+
+    var aNullableVariable: Int? = 10
+    println(aNullableVariable)
+    aNullableVariable = null
+    println(aNullableVariable)
 }
