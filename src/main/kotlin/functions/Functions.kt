@@ -25,6 +25,10 @@ fun getMessage(name: String) = "Hi $name"
 
 fun sayHey() = println("Hey!")
 
+fun greet(name: String, message: String): String {
+    return "$message $name"
+}
+
 fun main() {
     sayHello()
     sayHi()
@@ -32,4 +36,8 @@ fun main() {
     println(getGreetMessage())
     println(getMessage("Dave"))
     sayHey()
+    println(greet("Sky", "Welcome"))
+
+    // We can change the position of arguments using named arguments
+    println(greet(message = "Good day", name = "Sky"))
 }
