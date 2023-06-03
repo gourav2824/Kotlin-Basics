@@ -24,6 +24,17 @@ fun main() {
         }
     }
 
+    when {
+        name == "abc" -> println("ABC")
+        name == "xyz" -> println("XYZ")
+        else -> println("ELSE")
+    }
+
+    when {
+        name!!.startsWith("A") -> println("Starts with A")
+        else -> println("Doesn't start with A")
+    }
+
     // Three different ways of same condition
     val name1 = if (name != null) name else "NA"
     val name2 = name ?: "NA"
