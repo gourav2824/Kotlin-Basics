@@ -7,6 +7,7 @@ fun main() {
     forLoops()
     println("ForEach Loops...")
     forEachLoops()
+    whileLoops()
 }
 
 fun forLoops() {
@@ -38,4 +39,15 @@ fun forEachLoops() {
     names.forEachIndexed { index, name ->
         println("$name is at index $index")
     }
+}
+
+fun whileLoops() {
+    var x = 3
+    while (x > 0) {
+        println(x--)
+    }
+
+    do {
+        println(x++)
+    } while (x < 3)
 }
