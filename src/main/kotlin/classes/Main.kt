@@ -13,4 +13,7 @@ fun main() {
     println(person1.firstName)
     println(person1.lastName)
     println(person1.middleName)
+
+    println(Person.things)
+    println(Person.Things)
 }
