@@ -2,6 +2,7 @@ package classes
 
 fun main() {
     objectExpressions()
+    objectDeclarations()
 }
 
 // Examples of object expression
@@ -30,4 +31,18 @@ fun objectExpressions() {
     }
 
     println(helloWorld)
+}
+
+// Examples of object declaration (Singleton class)
+object HelloWorld {
+    const val hello = "Hello"
+    const val world = "World"
+
+    override fun toString() = "$hello $world"
+}
+
+fun objectDeclarations() {
+    println(HelloWorld.hello)
+    println(HelloWorld.world)
+    println(HelloWorld)
 }
